@@ -7,8 +7,7 @@ import BannerView from '../../components/BannerView'
 
 export default function ArtistsView() {
 
-    const [painters, setPainters] = useState<Painter[]>(Painters)
-    const { width, height } = Dimensions.get('window')
+    const [painters, setPainters] = useState<Painter[]>(Painters);
 
     return (
          <SafeAreaView>
@@ -16,7 +15,7 @@ export default function ArtistsView() {
                 <FlatList showsVerticalScrollIndicator={false} style={{ flexGrow: 1 }}
                     data={painters}
                     renderItem={({ item }) =>
-                        <BannerView item={item}></BannerView>}
+                        <BannerView painter={item}></BannerView>}
                 />
             </View>
          </SafeAreaView>
