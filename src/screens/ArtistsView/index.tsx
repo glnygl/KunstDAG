@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, SafeAreaView, FlatList, Dimensions } from 'react-native'
+import { View, SafeAreaView, FlatList } from 'react-native'
 import Painters from '../../PaintersData'
 import { Painter } from '../../models/PainterModel'
 import BannerView from '../../components/BannerView'

@@ -12,7 +12,6 @@ import ArtistsView from './src/screens/ArtistsView';
 import ArtworksView from './src/screens/ArtworksView';
 import ArtworkDetailView from './src/screens/ArtworkDetailView';
 import { RootStackParamList }  from './src/types'
-import { Painter } from './src/models/PainterModel';
 
 const Stack = createStackNavigator<RootStackParamList>();
 

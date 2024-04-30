@@ -1,10 +1,11 @@
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Painter } from './models/PainterModel';
+import { ArtObject } from './models/ArtworksModel';
 
 export type RootStackParamList = {
     ArtistsView: undefined;
     ArtworksView: {painter: Painter};
-    ArtworkDetailView: undefined;
+    ArtworkDetailView: {artwork: ArtObject};
   };
 
 export type ArtistsViewProps = NativeStackScreenProps<RootStackParamList, 'ArtistsView'>;
