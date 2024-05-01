@@ -12,7 +12,7 @@ export interface ArtObject {
 }
 
 export interface Links {
-    self: string
+    web: string
 }
 
 export interface WebImage {

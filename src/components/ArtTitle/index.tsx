@@ -5,8 +5,8 @@ import { ArtCoverProps } from '../ArtCover';
 export default function ArtTitle({artwork, artworkDetail}:ArtCoverProps) {
     return (
         <View> 
-           <Text style={styles.paintName}> {artwork.title} </Text> 
-           <Text style={styles.artistName}> {artwork.principalOrFirstMaker} | {artworkDetail?.dating.presentingDate}</Text>  
+           <Text style={styles.paintName}>{artwork.title}</Text> 
+           <Text style={styles.artistName}>{artwork.principalOrFirstMaker} | {artworkDetail?.dating.presentingDate}</Text>  
         </View>
     );
 }

@@ -11,6 +11,7 @@ export interface ArtObjectDetail {
     language: string
     title: string
     webImage?: WebImage
+    description: string
     plaqueDescriptionDutch: string
     plaqueDescriptionEnglish: string
     principalMaker: string
