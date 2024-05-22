@@ -10,8 +10,8 @@ export default function ArtistsView() {
     const [painters, setPainters] = useState<Painter[]>(Painters);
 
     return (
-        <SafeAreaView>
-            <View style={{ backgroundColor: 'white' }}>
+        <SafeAreaView style={{ backgroundColor: 'white' }}>
+            <View>
                 <FlatList showsVerticalScrollIndicator={false} style={{ flexGrow: 1 }}
                     data={painters}
                     renderItem={({ item }) =>

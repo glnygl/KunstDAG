@@ -19,8 +19,8 @@ export default function ArtworkDetailView() {
     }, [artworkDetail]);
 
     return (
-        <SafeAreaView>
-            <View style={{backgroundColor: 'white'}}>
+        <SafeAreaView style={{ backgroundColor: 'white' }}>
+            <View>
             <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
                 <ArtCover artwork={artwork} artworkDetail={artworkDetail?.artObject}></ArtCover>
                 <Text style={{ padding: 12 }} >{artworkDetail?.artObject.plaqueDescriptionEnglish ?? artworkDetail?.artObject.description}</Text>

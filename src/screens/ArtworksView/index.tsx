@@ -4,7 +4,6 @@ import { Painter } from '../../models/PainterModel'
 import { useRoute } from '@react-navigation/native';
 import { ArtworksModel } from '../../models/ArtworksModel';
 import ArtworkView from '../../components/ArtworkView';
-import styles from './style';
 
 
 export default function ArtworksView() {
@@ -19,9 +18,8 @@ export default function ArtworksView() {
     }, [artworks]);
 
     return (
-        <SafeAreaView>
-            <View style={{ backgroundColor: 'white' }}>
-                {/* <ActivityIndicator size={'large'} color={'red'} style= {styles.loading}></ActivityIndicator> */}
+        <SafeAreaView style={{ backgroundColor: 'white' }}>
+            <View>
                 <FlatList numColumns={2} showsVerticalScrollIndicator={false} style={{ flexGrow: 1 }}
                     data={artworks?.artObjects}
                     renderItem={({ item }) =>
