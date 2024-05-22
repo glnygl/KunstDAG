@@ -1,1 +1,3 @@
 # KunstDAG
+
+![](KunsdagBanner.jpg)
